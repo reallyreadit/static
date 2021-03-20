@@ -4,7 +4,7 @@ This repository stores the static files hosted at `static.readup.com`. The `stat
 
 1. **Hosting font and image files used by the various Readup clients.**
     
-	 These files are included in this repository in the `static` directory. This will be the root directory of our `static.readup.com` development server.
+	 These files are included in this repository in the `content` directory. This will be the root directory of our `static.readup.com` development server.
 2. **Hosting the authentication service popup handler HTML file.**
 
     This is a single static source file in the `web` repository that is not currently handled by the build system. We'll set up an alias at `/common/auth-service-popup-handler/v1/index.html` that points to the source file.
