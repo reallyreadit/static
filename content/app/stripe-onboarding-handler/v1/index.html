@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stripe Onboarding Complete</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover" />
+		<link rel="icon" type="image/x-icon" href="/app/images/favicon.ico" />
+		<style>
+			@font-face {
+				font-family: 'Museo Sans (300)';
+				src: url('/common/fonts/museo-sans-300.ttf');
+			}
+			@font-face {
+				font-family: 'Museo Sans (500)';
+				src: url('/common/fonts/museo-sans-500.ttf');
+			}
+			html {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				padding: 10px;
+				font-family: 'Museo Sans (300)', sans-serif;
+				background-color: #f7f6f5;
+				color: #2a2326;
+			}
+			body {
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+				text-align: center;
+			}
+			.logo {
+				display: block;
+				width: 114px;
+				height: 60px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-image: url('/app/images/logo.svg');
+			}
+			h1 {
+				font-size: 20pt;
+    			margin: 50px 0;
+				font-family: 'Museo Sans (500)', sans-serif;
+				font-weight: normal;
+			}
+			a {
+				display: block;
+				padding: 10px;
+				background-color: #2a2326;
+				color: #f7f6f5;
+				font-family: 'Museo Sans (500)', sans-serif;
+				text-decoration: none;
+				font-size: 16pt;
+				padding: 15px;
+			}
+			@media (prefers-color-scheme: dark) {
+				html {
+					background-color: #2a2326;
+					color: #c7c6c5;
+				}
+				.logo {
+					background-image: url('/app/images/logo-white.svg');
+				}
+				a {
+					background-color: #c7c6c5;
+					color: #2a2326;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="logo"></div>
+		<h1>Stripe Onboarding Complete</h1>
+		<a href="https://reallyread.it/settings">Return to Readup</a>
+	</body>
+</html>
