@@ -1,6 +1,6 @@
 # Readup Static Content
 ## Description
-This repository stores the static files hosted at `static.readup.com`. The `static.readup.com` server serves three main purposes:
+This repository tracks a subset of the static files hosted at `static.readup.com` that is useful for local app development. The `static.readup.com` server serves three main purposes:
 
 1. **Hosting font and image files used by the various Readup clients.**
 
@@ -13,3 +13,15 @@ This repository stores the static files hosted at `static.readup.com`. The `stat
     Setup of these directories is currently a manual process not covered in this guide. Not required for development use except for testing of the script update functionality.
 ## Setup Guide
 There is no build system in this repository. Follow the setup guide in the `dev-env` repository which covers setting up a web server which will reference the files in this repository.
+
+## Deployment
+
+This repository trackes the folders `app`, `common`, `email`, `extension` and `native-client`.
+
+The `static.readup.com` bucket also hosts `email-content` (assets for specific marketing emails), `embed` (archives) and `media` (misc assets).
+
+To sync the latest state of this repository to the ` s3://static.readup.com` bucket, without removing the content that is _not_ tracked here, run:
+
+```
+aws s3 sync --exclude "*.DS_Store" content s3://static.readup.com
+```
